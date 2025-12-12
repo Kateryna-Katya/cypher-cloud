@@ -809,3 +809,139 @@ h4 {
         margin-top: 30px;
     }
 }
+/* --- LEGAL PAGES STYLES --- */
+.pages {
+    padding-top: calc(var(--header-height) + 60px);
+    padding-bottom: 80px;
+    background-color: var(--color-bg);
+    min-height: 100vh;
+}
+
+.pages h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #fff;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 20px;
+}
+
+.pages h2 {
+    font-size: 1.8rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+    /* Выделяем заголовки синим */
+}
+
+.pages p {
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    color: var(--color-text-muted);
+    max-width: 800px;
+    /* Ограничиваем ширину для удобства чтения */
+}
+
+.pages strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.pages ul {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    max-width: 800px;
+}
+
+.pages ul li {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    color: var(--color-text-muted);
+}
+
+.pages ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background: var(--color-accent);
+    /* Квадратные маркеры списка */
+}
+
+.pages a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.pages a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+/* --- FAQ SECTION --- */
+.faq__grid {
+    max-width: 900px;
+    margin: 0 auto;
+    border-top: 1px solid var(--color-border);
+}
+
+.faq__item {
+    border-bottom: 1px solid var(--color-border);
+    overflow: hidden;
+}
+
+.faq__question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.faq__question span {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+.faq__icon {
+    color: var(--color-primary);
+    transition: transform 0.3s ease;
+}
+
+.faq__question:hover span {
+    color: var(--color-primary);
+}
+
+.faq__answer {
+    max-height: 0;
+    transition: max-height 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.faq__content {
+    padding-bottom: 25px;
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Active State */
+.faq__item.is-active .faq__icon {
+    transform: rotate(45deg);
+    /* Превращаем плюс в крестик */
+    color: var(--color-accent);
+}
+
+.faq__item.is-active .faq__answer {
+    max-height: 200px;
+    /* Достаточная высота для контента */
+}
