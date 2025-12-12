@@ -1,56 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/cypher-cloud/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cypher-Cloud | Карьерный апгрейд нового поколения</title>
+  <meta name="description"
+    content="Инновационная технология для построения карьеры. Решения, которые меняют правила игры.">
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/cypher-cloud/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/cypher-cloud/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/cypher-cloud/assets/styles-CAVletGC.css">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="header__container container">
+    <a href="/" class="header__logo">
+      <i data-lucide="cloud-lightning" class="header__logo-icon"></i>
+      <span class="header__logo-text">CYPHER-CLOUD</span>
+    </a>
+
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__item"><a href="#methodology" class="header__link">Методология</a></li>
+        <li class="header__item"><a href="#innovations" class="header__link">Инновации</a></li>
+        <li class="header__item"><a href="#blog" class="header__link">Блог и Кейсы</a></li>
+        <li class="header__item"><a href="#faq" class="header__link">Вопросы</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--outline">Связаться</a>
+      <button class="header__burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
 
-
-    <main>
+    <main class="main" id="smooth-wrapper">
+      <div id="smooth-content">
       <!-- Loads the specified .html file -->
       
+    </div>
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="/" class="footer__logo">CYPHER-CLOUD</a>
+        <p class="footer__desc">
+          Передовая цифровая инфраструктура для вашего профессионального роста.
+          Технологии, которые работают на вас.
+        </p>
+        <div class="footer__status">
+          <span class="status-dot"></span> Платформа активна в ЕС
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Навигация</h3>
+        <ul class="footer__list">
+          <li><a href="#methodology">Методология</a></li>
+          <li><a href="#innovations">Инновации</a></li>
+          <li><a href="#blog">Блог</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Юридическая информация</h3>
+        <ul class="footer__list">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="return.html">Return Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="personal-data-policy.html">Personal Data</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <ul class="footer__contacts">
+          <li>
+            <i data-lucide="map-pin"></i>
+            <span>Torstraße 142, 10119 Berlin, Deutschland</span>
+          </li>
+          <li>
+            <i data-lucide="phone"></i>
+            <a href="tel:+493012345678">+49 30 123 456 78</a>
+          </li>
+          <li>
+            <i data-lucide="mail"></i>
+            <a href="mailto:team@cypher-cloud.blog">team@cypher-cloud.blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 Cypher-Cloud. Все права защищены.</p>
+  
+    </div>
   </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 
-
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
